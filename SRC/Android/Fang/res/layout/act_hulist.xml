@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_line"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/top_bg" >
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/addhoc"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="户列表"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <!--
+             <Button
+            android:id="@+id/addhoc"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/addhoc"
+            android:gravity="center"
+            android:text="计划外"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        -->
+        <!--
+			<Button android:id="@+id/btn_drop_list"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/btn_hoc"
+			android:gravity="center_vertical" android:textColor="#ffffff"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp" />
+        -->
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/main_menu_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_line"
+        android:background="@color/background"
+        android:divider="@color/background"
+        android:dividerHeight="1dip"
+        android:fadingEdgeLength="0dip"
+        android:orientation="vertical" >
+    </ListView>
+
+
+
+</RelativeLayout>
